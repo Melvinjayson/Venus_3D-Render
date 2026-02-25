@@ -1,0 +1,40 @@
+:root {
+    /* Venus Galactic Palette - System Tokens */
+
+    /* Primary Brand */
+    --color-venus-black: 3 3 5;
+    /* #030305 */
+    --color-venus-dark: 10 10 15;
+    /* #0a0a0f */
+    --color-venus-surface: 26 26 36;
+    /* #1a1a24 */
+
+    /* Accents */
+    --color-galactic-primary: 124 58 237;
+    /* #7c3aed (Purple) */
+    --color-galactic-secondary: 34 211 238;
+    /* #22d3ee (Cyan) */
+    --color-galactic-accent: 244 114 182;
+    /* #f472b6 (Pink) */
+
+    /* Semantic Status */
+    --color-status-success: 16 185 129;
+    --color-status-warning: 245 158 11;
+    --color-status-error: 239 68 68;
+    --color-status-info: 59 130 246;
+
+    /* Typography */
+    --font-display: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* Spacing Scale */
+    --space-unit: 0.25rem;
+    /* 4px */
+}
+
+/* Base utility classes for gradients */
+.bg-venus-gradient {
+    background-image: radial-gradient(circle at 50% 0%, rgb(var(--color-venus-surface) / 0.5) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgb(var(--color-venus-dark)) 0%, transparent 30%);
+}

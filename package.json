@@ -1,0 +1,17 @@
+{
+  "name": "venus-os",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@venus/web",
+    "build": "npm run build --workspaces",
+    "deploy:galactic": "npm run deploy --workspace=@venus/web"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "rimraf": "^5.0.0"
+  }
+}
